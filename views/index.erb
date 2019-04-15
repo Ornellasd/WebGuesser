@@ -1,5 +1,17 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        <% if message == "Way too high!" || message == "Way too low!" %>
+          background: red
+        <% elsif message == "Too high!"  || message == "Too low!" %>
+          background: #e86363
+        <% else %>
+          background: green
+        <% end %>
+      }
+    </style>
+  </head>
   <body>
     <p>
       <%= message %>

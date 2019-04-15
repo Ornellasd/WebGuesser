@@ -11,7 +11,7 @@ def check_guess(guess, random_number)
   elsif guess > random_number
     "Too high!"
   elsif guess < random_number
-    "Too low"
+    "Too low!"
   else
     "You got it right!"
   end
